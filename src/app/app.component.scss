@@ -1,0 +1,63 @@
+// Import variables
+@use './landing-page/landing-page.component' as *;
+
+/* Global Navbar (Sticky + Glassmorphism) */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba($bg-color, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $primary-color;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      font-weight: 600;
+      color: $text-muted;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* Base Mobile Responsive Adjustments for Global Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    &-container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  }
+}

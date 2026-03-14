@@ -1,0 +1,64 @@
+@use '../landing-page/landing-page.component' as *;
+
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.breadcrumb {
+  margin-bottom: 3rem;
+
+  a {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateX(-4px);
+      text-decoration: underline;
+    }
+  }
+}
+
+.detail-hero {
+  margin-bottom: 4rem;
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: $text-main;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: $text-muted;
+    line-height: 1.6;
+  }
+
+  .mt-4 {
+    margin-top: 1rem;
+  }
+}
+
+.detail-content {
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: $text-main;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: $text-muted;
+    margin-bottom: 1.5rem;
+  }
+}

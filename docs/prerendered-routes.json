@@ -1,0 +1,20 @@
+{
+  "routes": {
+    "/Program%20Files/Git/portfolio": {},
+    "/Program%20Files/Git/portfolio/competences/angular": {},
+    "/Program%20Files/Git/portfolio/competences/api": {},
+    "/Program%20Files/Git/portfolio/competences/collaboration": {},
+    "/Program%20Files/Git/portfolio/competences/communication": {},
+    "/Program%20Files/Git/portfolio/competences/critique": {},
+    "/Program%20Files/Git/portfolio/competences/docker": {},
+    "/Program%20Files/Git/portfolio/competences/java-springboot": {},
+    "/Program%20Files/Git/portfolio/competences/jenkins": {},
+    "/Program%20Files/Git/portfolio/competences/jugement": {},
+    "/Program%20Files/Git/portfolio/competences/react": {},
+    "/Program%20Files/Git/portfolio/realisations/activ-infinite": {},
+    "/Program%20Files/Git/portfolio/realisations/neoherba": {},
+    "/Program%20Files/Git/portfolio/realisations/refonte": {},
+    "/Program%20Files/Git/portfolio/realisations/spinnin": {},
+    "/Program%20Files/Git/portfolio/realisations/stubs": {}
+  }
+}

@@ -1,13 +1,29 @@
 <div class="page-container">
-      <nav class="breadcrumb">
-        <a routerLink="/">← Retour à l'accueil</a>
-      </nav>
-      <header class="detail-hero">
-        <h1>Jenkins CI/CD</h1>
-        <p class="subtitle">Intégration et Déploiement Continus</p>
-      </header>
-      <section class="detail-content">
-        <h2>Expertise Technique</h2>
-        <p>Mise en place et gestion de pipelines CI/CD complexes via Jenkins, afin d'automatiser les tests, la compilation et la livraison logicielle.</p>
-      </section>
-    </div>
+  <nav class="breadcrumb">
+    <a routerLink="/">← Retour à l'accueil</a>
+  </nav>
+  <header class="detail-hero">
+    <h1>Jenkins CI/CD</h1>
+    <p class="subtitle">Intégration et Déploiement Continus</p>
+  </header>
+  <section class="detail-content">
+    <p>Jenkins est un outil opensource de serveur écrit en Java, permettant l’automatisation des tâches de développement
+      liées au build, aux tests, etc. Sorti en 2011, il est populaire grâce à sa capacité à s’interfacer avec les
+      gestionnaires de codes habituels tels que github ou gitlab et grâce à sa maintenabilité. En effet Jenkins offre
+      une
+      rétrocompatibilité qui permet de facilement monter de version sans pour autant devoir refaire tous les scripts
+      déjà
+      développés.</p>
+    <p>Pour exécuter des builds, il faut écrire des scripts de build dans des fichiers appelés “Jenkinsfile” à la racine
+      des projets concernés. Dans ces scripts on peut par exemple préciser un node sur lequel l’agent jenkins exécutera
+      les étapes (appelées “steps”) décrites. Il est possible de créer des groupes de nodes pour pouvoir utiliser une
+      machine avec certaines caractéristiques sans pour autant se soucier de savoir laquelle exactement on souhaite
+      utiliser. Jenkins s’interface facilement avec d’autres technologies de déploiement telles que docker par exemple,
+      il
+      est possible d’exécuter des steps de build à l’intérieur d’une image qu’on aura précisée à jenkins.</p>
+    <p>Je n’avais jamais entendu parler de Jenkins avant d’arriver en alternance et j’ai donc appris en pratiquant
+      directement, sans trop de théorie. Travailler sur le déploiement d’une application après l’avoir développée m’a
+      permis de voir l’entièreté du cycle de vie d’une application et d’approfondir mes connaissances à la fois en
+      développement pur et en déploiement.</p>
+  </section>
+</div>

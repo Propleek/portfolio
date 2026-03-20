@@ -1,13 +1,36 @@
 <div class="page-container">
-      <nav class="breadcrumb">
-        <a routerLink="/">← Retour à l'accueil</a>
-      </nav>
-      <header class="detail-hero">
-        <h1>Docker</h1>
-        <p class="subtitle">Conteneurisation et Déploiement</p>
-      </header>
-      <section class="detail-content">
-        <h2>Expertise Technique</h2>
-        <p>Utilisation de Docker pour isoler les environnements d'exécution, standardiser les déploiements et fluidifier les processus d'intégration continue.</p>
-      </section>
-    </div>
+  <nav class="breadcrumb">
+    <a routerLink="/">← Retour à l'accueil</a>
+  </nav>
+  <header class="detail-hero">
+    <h1>Docker</h1>
+    <p class="subtitle">Conteneurisation et Déploiement</p>
+  </header>
+  <section class="detail-content">
+    <p>Docker est une plateforme logiciel et une librairie permettant de faire tourner des applications dans des
+      environnements hermétiques appelés “Conteneurs”. Sorti en 2013, Docker s’est imposé comme un incontournable pour
+      les
+      déploiements et les mises en production. En effet sa capacité à créer des environnements hermétiques très
+      facilement
+      permet de faire des scripts de déploiement sans se soucier de la machine physique sur laquelle ils sont exécutés.
+    </p>
+    <p>Il est possible de créer soi-même une application dockerisée en créant ce que l’on appelle une image, qui pourra
+      ensuite être lancée sur un conteneur. Ces images sont créées dans des scripts appelés “dockerfile” qui permettent
+      de
+      créer une image à partir d’une image de base, allant d’un linux debian vierge à un environnement web complet avec
+      Serveur Nginx et base de données mysql configurés.</p>
+    <p>On peut également mettre ces images en relation entre elles pour créer de véritables écosystèmes virtuels reliés
+      dans ce que l’on appelle des “docker-compose”, des scripts permettant d’agréger les images entre elles. On peut
+      ainsi créer un dockerfile pour son application web frontend, un autre pour son API et les mettre ensemble dans un
+      docker-compose pour pouvoir tout déployer en même temps. Bien que ça ne soit pas recommandé dans un contexte de
+      production, pouvoir facilement débugger sur un environnement très proche de ce qui sera présent en production fait
+      gagner un temps considérable.</p>
+    <p>J’ai été amené à travailler avec Docker en arrivant en alternance car comme je disais plus haut, c’est un
+      incontournable que toutes les entreprises utilisent. J’ai été tout de suite fasciné par la facilité avec laquelle
+      il
+      est possible de faire des scripts de déploiement avec Docker et surtout par la fiabilité de cette plateforme. Je
+      n’ai presque jamais eu de problèmes en passant une application de mon poste à son déploiement une fois le
+      dockerfile
+      correctement écrit.</p>
+  </section>
+</div>

@@ -1,0 +1,20 @@
+{
+  "routes": {
+    "/": {},
+    "/competences/angular": {},
+    "/competences/api": {},
+    "/competences/collaboration": {},
+    "/competences/communication": {},
+    "/competences/critique": {},
+    "/competences/docker": {},
+    "/competences/java-springboot": {},
+    "/competences/jenkins": {},
+    "/competences/jugement": {},
+    "/competences/react": {},
+    "/realisations/activ-infinite": {},
+    "/realisations/neoherba": {},
+    "/realisations/refonte": {},
+    "/realisations/spinnin": {},
+    "/realisations/stubs": {}
+  }
+}

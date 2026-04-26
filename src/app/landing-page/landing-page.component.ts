@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { Router } from '@angular/router';
-
+import { ParcoursComponent } from '../parcours/parcours.component';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ParcoursComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })

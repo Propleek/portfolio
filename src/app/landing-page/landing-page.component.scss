@@ -241,6 +241,109 @@ ul {
   }
 }
 
+/* Competences Section */
+.competences-groups {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.competences-group {
+  flex: 1;
+
+  .group-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $text-main;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.competences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.competence-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.6rem;
+  padding: 1.25rem 0.75rem;
+  background: $bg-color;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  .material-icons {
+    font-size: 2rem;
+    color: $primary-color;
+    transition: color 0.3s ease;
+  }
+
+  .competence-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $text-main;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    background-color: $primary-color;
+    box-shadow: 0 10px 15px -3px rgba($primary-color, 0.4);
+
+    .material-icons {
+      color: white;
+    }
+
+    .competence-label {
+      color: white;
+    }
+  }
+}
+
+$color-tech: #2496ED;
+$color-human: #14B8A6;
+
+.competence-card.color-tech {
+  .material-icons { color: $color-tech; }
+
+  &:hover {
+    background-color: $color-tech;
+    box-shadow: 0 10px 15px -3px rgba($color-tech, 0.4);
+
+    .material-icons { color: white; }
+  }
+}
+
+.competence-card.color-human {
+  .material-icons { color: $color-human; }
+
+  &:hover {
+    background-color: $color-human;
+    box-shadow: 0 10px 15px -3px rgba($color-human, 0.4);
+
+    .material-icons { color: white; }
+  }
+}
+
+@media (max-width: 768px) {
+  .competences-groups {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 /* Footer */
 .footer {
   text-align: center;

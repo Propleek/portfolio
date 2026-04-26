@@ -1,0 +1,56 @@
+<section class="parcours-section" id="parcours">
+  <div class="parcours-container">
+    <h2 class="section-title">Mon Parcours</h2>
+    
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let exp of experiences" [ngClass]="exp.type">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="level-1">
+            <span class="period">{{ exp.period }}</span>
+            <h3 class="title">{{ exp.title }}</h3>
+            
+            <div class="location">
+              <span class="location-name">{{ exp.locationName }}</span>
+              <a *ngIf="exp.locationUrl" [href]="exp.locationUrl" target="_blank" class="location-link" rel="noopener noreferrer">
+                 <img *ngIf="exp.locationLogo" [src]="exp.locationLogo" alt="Logo {{ exp.locationName }}" class="logo-img" />
+              </a>
+              <img *ngIf="!exp.locationUrl && exp.locationLogo" [src]="exp.locationLogo" alt="Logo {{ exp.locationName }}" class="logo-img" />
+            </div>
+          </div>
+          
+          <div class="level-2">
+            <ng-container *ngIf="exp.type === 'entreprise'">
+              <p class="responsibility" *ngIf="exp.responsibility"><strong>Responsabilité :</strong> {{ exp.responsibility }}</p>
+              <p class="status" *ngIf="exp.status"><strong>Statut :</strong> {{ exp.status }}</p>
+              <p class="details" *ngIf="exp.details">{{ exp.details }}</p>
+              
+              <div class="links" *ngIf="exp.realisationsLinks?.length || exp.competencesLinks?.length">
+                <div class="link-group" *ngIf="exp.realisationsLinks?.length">
+                  <strong>Réalisations :</strong>
+                  <ul>
+                    <li *ngFor="let link of exp.realisationsLinks"><a [href]="link.url">{{ link.label }}</a></li>
+                  </ul>
+                </div>
+                <div class="link-group" *ngIf="exp.competencesLinks?.length">
+                  <strong>Compétences liées :</strong>
+                  <ul>
+                    <li *ngFor="let link of exp.competencesLinks"><a [href]="link.url">{{ link.label }}</a></li>
+                  </ul>
+                </div>
+              </div>
+            </ng-container>
+            
+            <ng-container *ngIf="exp.type === 'formation'">
+              <p class="description" *ngIf="exp.description">{{ exp.description }}</p>
+            </ng-container>
+
+            <ng-container *ngIf="exp.type === 'certification'">
+              <p class="details">Obtention de la certification</p>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

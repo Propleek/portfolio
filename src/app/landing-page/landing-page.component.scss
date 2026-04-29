@@ -139,6 +139,18 @@ ul {
   }
 }
 
+.subsection-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $primary-color;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid rgba($primary-color, 0.2);
+}
+
 .editable-text {
   font-size: 1.125rem;
   line-height: 1.8;

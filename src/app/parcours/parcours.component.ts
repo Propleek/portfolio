@@ -60,7 +60,7 @@ export class ParcoursComponent {
       id: 3,
       type: 'formation',
       period: 'Septembre 2021 - Juin 2023',
-      title: "Concepteur Développeur d'Apllications - RNCP Niveau 6",
+      title: "Concepteur Développeur d'Applications - RNCP Niveau 6",
       locationName: 'ESIEA',
       locationLogo: 'https://upload.wikimedia.org/wikipedia/fr/thumb/7/73/Logo_ESIEA_2020.png/960px-Logo_ESIEA_2020.png?_=20210612193640', 
       locationUrl: 'https://www.esiea.fr',

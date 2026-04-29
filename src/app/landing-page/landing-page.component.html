@@ -216,9 +216,16 @@
 <section class="content-section" id="contact">
   <div class="content-container">
     <h2 class="section-title">Contact</h2>
-    <p class="editable-text center-text">Pas encore fait</p>
-    <div class="hero-ctas justify-center">
-      <button class="btn btn-primary">Envoyer un message</button>
+    <div class="email-reveal-container">
+      <div class="email-display">
+        <span class="email-text blurred" *ngIf="!emailRevealed">quentin.marty11&#64;gmail.com</span>
+        <a href="mailto:quentin.marty11@gmail.com" class="email-text email-link" *ngIf="emailRevealed">
+          quentin.marty11&#64;gmail.com
+        </a>
+      </div>
+      <button class="btn btn-primary" (click)="toggleEmail()">
+        {{ emailRevealed ? "Masquer l'adresse" : "Révéler l'adresse mail" }}
+      </button>
     </div>
   </div>
 </section>

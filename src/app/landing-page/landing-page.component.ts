@@ -13,11 +13,17 @@ export class LandingPageComponent {
   private viewportScroller = inject(ViewportScroller);
   private router = inject(Router);
 
+  emailRevealed = false;
+
   public scrollTo(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
   }
 
   public navigate(path: string): void {
     this.router.navigate([path]);
+  }
+
+  public toggleEmail(): void {
+    this.emailRevealed = !this.emailRevealed;
   }
 }

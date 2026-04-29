@@ -344,6 +344,42 @@ $color-human: #14B8A6;
   }
 }
 
+/* Contact Section */
+.email-reveal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.email-display {
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.email-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $text-main;
+  letter-spacing: 0.02em;
+
+  &.blurred {
+    filter: blur(6px);
+    user-select: none;
+  }
+
+  &.email-link {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 /* Footer */
 .footer {
   text-align: center;

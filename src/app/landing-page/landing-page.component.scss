@@ -5,6 +5,8 @@ $text-main: #111827;
 $text-muted: #4b5563;
 $bg-color: #ffffff;
 $bg-alt: #f9fafb;
+$color-tech: #2496ED;
+$color-human: #14B8A6;
 
 :host {
   font-family: 'Inter', sans-serif;
@@ -242,12 +244,33 @@ ul {
         color: $primary-color;
         border-color: $primary-color;
       }
+
+      &.color-tech {
+        background-color: rgba($color-tech, 0.1);
+        color: $color-tech;
+        border-color: rgba($color-tech, 0.2);
+
+        &:hover {
+          background-color: $bg-color;
+          color: $color-tech;
+          border-color: $color-tech;
+        }
+      }
+
+      &.color-human {
+        background-color: rgba($color-human, 0.1);
+        color: $color-human;
+        border-color: rgba($color-human, 0.2);
+
+        &:hover {
+          background-color: $bg-color;
+          color: $color-human;
+          border-color: $color-human;
+        }
+      }
     }
   }
 }
-
-$color-tech: #2496ED;
-$color-human: #14B8A6;
 
 .competences-groups {
   display: flex;

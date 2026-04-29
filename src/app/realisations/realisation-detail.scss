@@ -91,3 +91,29 @@
     font-size: 1rem;
   }
 }
+
+.competence-tile.color-tech {
+  border-left: 4px solid $color-tech;
+
+  h3 { color: $color-tech; }
+
+  &:hover {
+    background-color: $color-tech;
+    box-shadow: 0 10px 15px -3px rgba($color-tech, 0.4);
+
+    h3 { color: white; }
+  }
+}
+
+.competence-tile.color-human {
+  border-left: 4px solid $color-human;
+
+  h3 { color: $color-human; }
+
+  &:hover {
+    background-color: $color-human;
+    box-shadow: 0 10px 15px -3px rgba($color-human, 0.4);
+
+    h3 { color: white; }
+  }
+}

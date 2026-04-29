@@ -1,5 +1,3 @@
-/* Font imported globally in index.html */
-
 $primary-color: #6366f1;
 $primary-hover: #4f46e5;
 $secondary-color: #f3f4f6;
@@ -14,7 +12,6 @@ $bg-alt: #f9fafb;
   display: block;
 }
 
-/* Base Styles */
 h1, h2, h3, p {
   margin: 0;
   padding: 0;
@@ -68,7 +65,6 @@ ul {
   }
 }
 
-/* Hero Section */
 .hero {
   min-height: 80vh;
   display: flex;
@@ -112,7 +108,6 @@ ul {
   }
 }
 
-/* Content Sections */
 .content-section {
   padding: 6rem 2rem;
 
@@ -144,7 +139,6 @@ ul {
   }
 }
 
-/* Editable Text Block */
 .editable-text {
   font-size: 1.125rem;
   line-height: 1.8;
@@ -157,7 +151,6 @@ ul {
   }
 }
 
-/* Grid layout for realisations */
 .realisation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -241,7 +234,9 @@ ul {
   }
 }
 
-/* Competences Section */
+$color-tech: #2496ED;
+$color-human: #14B8A6;
+
 .competences-groups {
   display: flex;
   gap: 3rem;
@@ -262,78 +257,105 @@ ul {
   }
 }
 
-.competences-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1rem;
-}
-
-.competence-card {
+.competences-list {
   display: flex;
   flex-direction: column;
+  gap: 0.65rem;
+}
+
+.competence-tag {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 0.6rem;
-  padding: 1.25rem 0.75rem;
+  justify-content: space-between;
+  padding: 0.85rem 1.1rem;
   background: $bg-color;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 
-  .material-icons {
-    font-size: 2rem;
-    color: $primary-color;
-    transition: color 0.3s ease;
-  }
-
-  .competence-label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: $text-main;
-    line-height: 1.3;
-    transition: color 0.3s ease;
-  }
-
-  &:hover {
-    transform: translateY(-4px);
-    background-color: $primary-color;
-    box-shadow: 0 10px 15px -3px rgba($primary-color, 0.4);
+  .tag-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 
     .material-icons {
-      color: white;
+      font-size: 1.35rem;
+      transition: color 0.25s ease;
     }
 
     .competence-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: $text-main;
+      transition: color 0.25s ease;
+    }
+  }
+
+  .competence-level {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+  }
+
+  &:hover {
+    transform: translateX(5px);
+
+    .tag-left .competence-label {
       color: white;
+    }
+
+    .tag-left .material-icons {
+      color: white;
+    }
+
+    .competence-level {
+      background-color: rgba(255, 255, 255, 0.25) !important;
+      color: white !important;
     }
   }
 }
 
-$color-tech: #2496ED;
-$color-human: #14B8A6;
+.competence-tag.color-tech {
+  border-left: 4px solid $color-tech;
 
-.competence-card.color-tech {
-  .material-icons { color: $color-tech; }
+  .tag-left .material-icons { color: $color-tech; }
+
+  .competence-level {
+    background-color: rgba($color-tech, 0.1);
+    color: $color-tech;
+  }
 
   &:hover {
     background-color: $color-tech;
-    box-shadow: 0 10px 15px -3px rgba($color-tech, 0.4);
+    box-shadow: 0 6px 12px rgba($color-tech, 0.35);
 
-    .material-icons { color: white; }
+    .tag-left .material-icons { color: white; }
+    .tag-left .competence-label { color: white; }
   }
 }
 
-.competence-card.color-human {
-  .material-icons { color: $color-human; }
+.competence-tag.color-human {
+  border-left: 4px solid $color-human;
+
+  .tag-left .material-icons { color: $color-human; }
+
+  .competence-level {
+    background-color: rgba($color-human, 0.1);
+    color: $color-human;
+  }
 
   &:hover {
     background-color: $color-human;
-    box-shadow: 0 10px 15px -3px rgba($color-human, 0.4);
+    box-shadow: 0 6px 12px rgba($color-human, 0.35);
 
-    .material-icons { color: white; }
+    .tag-left .material-icons { color: white; }
+    .tag-left .competence-label { color: white; }
   }
 }
 
@@ -344,7 +366,6 @@ $color-human: #14B8A6;
   }
 }
 
-/* Contact Section */
 .email-reveal-container {
   display: flex;
   flex-direction: column;
@@ -380,7 +401,6 @@ $color-human: #14B8A6;
   }
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 2rem;
@@ -389,7 +409,6 @@ $color-human: #14B8A6;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-ctas {
     flex-direction: column;

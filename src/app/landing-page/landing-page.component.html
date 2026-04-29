@@ -78,52 +78,26 @@
 
       <div class="competences-group">
         <h3 class="group-title">Compétences techniques</h3>
-        <div class="competences-grid">
-          <div class="competence-card color-tech" (click)="navigate('/competences/angular')">
-            <span class="material-icons">web</span>
-            <span class="competence-label">Angular</span>
-          </div>
-          <div class="competence-card color-tech" (click)="navigate('/competences/java-springboot')">
-            <span class="material-icons">code</span>
-            <span class="competence-label">Java / SpringBoot</span>
-          </div>
-          <div class="competence-card color-tech" (click)="navigate('/competences/api')">
-            <span class="material-icons">api</span>
-            <span class="competence-label">API</span>
-          </div>
-          <div class="competence-card color-tech" (click)="navigate('/competences/docker')">
-            <span class="material-icons">storage</span>
-            <span class="competence-label">Docker</span>
-          </div>
-          <div class="competence-card color-tech" (click)="navigate('/competences/react')">
-            <span class="material-icons">widgets</span>
-            <span class="competence-label">React</span>
-          </div>
-          <div class="competence-card color-tech" (click)="navigate('/competences/jenkins')">
-            <span class="material-icons">autorenew</span>
-            <span class="competence-label">Jenkins CI/CD</span>
+        <div class="competences-list">
+          <div class="competence-tag color-tech" *ngFor="let c of techCompetences" (click)="navigate(c.route)">
+            <div class="tag-left">
+              <span class="material-icons">{{ c.icon }}</span>
+              <span class="competence-label">{{ c.label }}</span>
+            </div>
+            <span class="competence-level">{{ c.level }}</span>
           </div>
         </div>
       </div>
 
       <div class="competences-group">
         <h3 class="group-title">Compétences humaines</h3>
-        <div class="competences-grid">
-          <div class="competence-card color-human" (click)="navigate('/competences/collaboration')">
-            <span class="material-icons">group</span>
-            <span class="competence-label">Collaboration</span>
-          </div>
-          <div class="competence-card color-human" (click)="navigate('/competences/communication')">
-            <span class="material-icons">description</span>
-            <span class="competence-label">Communication écrite</span>
-          </div>
-          <div class="competence-card color-human" (click)="navigate('/competences/critique')">
-            <span class="material-icons">psychology</span>
-            <span class="competence-label">Esprit critique</span>
-          </div>
-          <div class="competence-card color-human" (click)="navigate('/competences/jugement')">
-            <span class="material-icons">balance</span>
-            <span class="competence-label">Jugement et prise de décision</span>
+        <div class="competences-list">
+          <div class="competence-tag color-human" *ngFor="let c of humanCompetences" (click)="navigate(c.route)">
+            <div class="tag-left">
+              <span class="material-icons">{{ c.icon }}</span>
+              <span class="competence-label">{{ c.label }}</span>
+            </div>
+            <span class="competence-level">{{ c.level }}</span>
           </div>
         </div>
       </div>

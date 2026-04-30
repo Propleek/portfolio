@@ -19,9 +19,9 @@ export class LandingPageComponent {
     { label: 'Angular', icon: 'web', route: '/competences/angular', level: 'Confirmé' },
     { label: 'Java / SpringBoot', icon: 'code', route: '/competences/java-springboot', level: 'Confirmé' },
     { label: 'API', icon: 'api', route: '/competences/api', level: 'Confirmé' },
-    { label: 'Docker', icon: 'storage', route: '/competences/docker', level: 'Avancé' },
-    { label: 'React', icon: 'widgets', route: '/competences/react', level: 'Intermédiaire' },
-    { label: 'Jenkins CI/CD', icon: 'autorenew', route: '/competences/jenkins', level: 'Avancé' },
+    { label: 'Docker', icon: 'storage', route: '/competences/docker', level: 'Autonome' },
+    { label: 'React', icon: 'widgets', route: '/competences/react', level: 'Autonome' },
+    { label: 'Jenkins CI/CD', icon: 'autorenew', route: '/competences/jenkins', level: 'Autonome' },
   ];
 
   humanCompetences = [

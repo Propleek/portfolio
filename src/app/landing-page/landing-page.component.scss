@@ -201,9 +201,21 @@ ul {
     }
 
     .competence-tags .tag {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.15);
       color: #ffffff;
-      border-color: rgba(255, 255, 255, 0.4);
+      border-color: rgba(255, 255, 255, 0.3);
+
+      &.color-tech {
+        background-color: rgba(186, 230, 253, 0.2);
+        color: #BAE6FD;
+        border-color: rgba(186, 230, 253, 0.5);
+      }
+
+      &.color-human {
+        background-color: rgba(167, 243, 208, 0.2);
+        color: #A7F3D0;
+        border-color: rgba(167, 243, 208, 0.5);
+      }
     }
   }
 
@@ -213,6 +225,7 @@ ul {
     margin-bottom: 1rem;
     color: $primary-color;
     transition: color 0.4s ease;
+    text-align: left;
   }
 
   p {

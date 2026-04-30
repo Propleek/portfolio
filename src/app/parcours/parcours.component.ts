@@ -43,7 +43,15 @@ export class ParcoursComponent {
       ],
       competencesLinks: [
         { label: 'Angular', url: '/competences/angular' },
-        { label: 'Java/Springboot', url: '/competences/java-springboot' }
+        { label: 'Java/Springboot', url: '/competences/java-springboot' },
+        { label: 'Docker', url: '/competences/docker' },
+        { label: 'Jenkins CI/CD', url: '/competences/jenkins' },
+        { label: 'API', url: '/competences/api' },
+        { label: 'React', url: '/competences/react' },
+        { label: 'Collaboration', url: '/competences/collaboration' },
+        { label: 'Communication écrite', url: '/competences/communication' },
+        { label: 'Esprit critique', url: '/competences/critique' },
+        { label: 'Jugement et prise de décision', url: '/competences/jugement' }
       ]
     },
     {

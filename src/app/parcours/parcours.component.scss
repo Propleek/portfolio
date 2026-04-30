@@ -240,6 +240,12 @@ $bg-alt: #f9fafb;
 .entreprise .level-2 .links a { color: #f59e0b; }
 .entreprise .level-2 .links a:hover { color: darken(#f59e0b, 10%); }
 
+.entreprise .level-2 .links a.link-tech { color: #2496ED; }
+.entreprise .level-2 .links a.link-tech:hover { color: darken(#2496ED, 10%); }
+
+.entreprise .level-2 .links a.link-human { color: #14B8A6; }
+.entreprise .level-2 .links a.link-human:hover { color: darken(#14B8A6, 10%); }
+
 .formation .timeline-dot { background-color: #3b82f6; }
 .formation .timeline-content::before { background-color: #3b82f6; }
 .formation .level-1 .period { color: #3b82f6; }

@@ -13,7 +13,7 @@ export interface Experience {
   status?: string;
   details?: string;
   realisationsLinks?: { label: string, url: string }[];
-  competencesLinks?: { label: string, url: string }[];
+  competencesLinks?: { label: string, url: string, category: 'tech' | 'human' }[];
   description?: string;
 }
 
@@ -42,16 +42,16 @@ export class ParcoursComponent {
         { label: 'Automatisation Stubs Infinite', url: '/realisations/stubs' }
       ],
       competencesLinks: [
-        { label: 'Angular', url: '/competences/angular' },
-        { label: 'Java/Springboot', url: '/competences/java-springboot' },
-        { label: 'Docker', url: '/competences/docker' },
-        { label: 'Jenkins CI/CD', url: '/competences/jenkins' },
-        { label: 'API', url: '/competences/api' },
-        { label: 'React', url: '/competences/react' },
-        { label: 'Collaboration', url: '/competences/collaboration' },
-        { label: 'Communication écrite', url: '/competences/communication' },
-        { label: 'Esprit critique', url: '/competences/critique' },
-        { label: 'Jugement et prise de décision', url: '/competences/jugement' }
+        { label: 'Angular', url: '/competences/angular', category: 'tech' },
+        { label: 'Java/Springboot', url: '/competences/java-springboot', category: 'tech' },
+        { label: 'Docker', url: '/competences/docker', category: 'tech' },
+        { label: 'Jenkins CI/CD', url: '/competences/jenkins', category: 'tech' },
+        { label: 'API', url: '/competences/api', category: 'tech' },
+        { label: 'React', url: '/competences/react', category: 'tech' },
+        { label: 'Collaboration', url: '/competences/collaboration', category: 'human' },
+        { label: 'Communication écrite', url: '/competences/communication', category: 'human' },
+        { label: 'Esprit critique', url: '/competences/critique', category: 'human' },
+        { label: 'Jugement et prise de décision', url: '/competences/jugement', category: 'human' }
       ]
     },
     {

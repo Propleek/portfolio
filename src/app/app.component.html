@@ -3,8 +3,42 @@
     <a class="logo" routerLink="/">Quentin Marty</a>
     <ul class="nav-links">
       <li><a (click)="scrollTo('parcours')">Mon parcours</a></li>
-      <li><a (click)="scrollTo('competences-list')">Mes compétences</a></li>
-      <li><a (click)="scrollTo('realisations')">Mes réalisations</a></li>
+
+      <li class="has-dropdown">
+        <a (click)="scrollTo('competences-list')">
+          Mes compétences
+          <span class="dropdown-arrow"></span>
+        </a>
+        <ul class="dropdown">
+          <li class="dropdown-group-label">Techniques</li>
+          <li><a routerLink="/competences/angular">Angular</a></li>
+          <li><a routerLink="/competences/java-springboot">Java / SpringBoot</a></li>
+          <li><a routerLink="/competences/api">API REST</a></li>
+          <li><a routerLink="/competences/docker">Docker</a></li>
+          <li><a routerLink="/competences/jenkins">Jenkins</a></li>
+          <li><a routerLink="/competences/react">React</a></li>
+          <li class="dropdown-group-label">Humaines</li>
+          <li><a routerLink="/competences/collaboration">Collaboration</a></li>
+          <li><a routerLink="/competences/communication">Communication écrite</a></li>
+          <li><a routerLink="/competences/critique">Esprit critique</a></li>
+          <li><a routerLink="/competences/jugement">Jugement et prise de décision</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dropdown">
+        <a (click)="scrollTo('realisations')">
+          Mes réalisations
+          <span class="dropdown-arrow"></span>
+        </a>
+        <ul class="dropdown">
+          <li><a routerLink="/realisations/refonte">Refonte outils internes</a></li>
+          <li><a routerLink="/realisations/neoherba">Neoherba</a></li>
+          <li><a routerLink="/realisations/activ-infinite">Activ-Infinite</a></li>
+          <li><a routerLink="/realisations/stubs">Automatisation stubs</a></li>
+          <li><a routerLink="/realisations/spinnin">Spinnin'</a></li>
+        </ul>
+      </li>
+
       <li><a (click)="scrollTo('contact')">Me contacter</a></li>
     </ul>
   </div>

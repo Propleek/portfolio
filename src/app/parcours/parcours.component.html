@@ -35,7 +35,7 @@
                 <div class="link-group" *ngIf="exp.competencesLinks?.length">
                   <strong>Compétences liées :</strong>
                   <ul>
-                    <li *ngFor="let link of exp.competencesLinks"><a [href]="link.url">{{ link.label }}</a></li>
+                    <li *ngFor="let link of exp.competencesLinks"><a [href]="link.url" [ngClass]="'link-' + link.category">{{ link.label }}</a></li>
                   </ul>
                 </div>
               </div>
